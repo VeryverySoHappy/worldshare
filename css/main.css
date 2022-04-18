@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+/* section01 start */
+.slider {
+  width: 1920px;
+  height: 600px;
+  margin: 0 auto 100px auto;
+  position: relative;
+}
+.stopPlay .btn_stop {
+  background: url(../img/main/visualPlay.png) no-repeat center top;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 5%;
+  left: 19%;
+}
+.stopPlay .btn_play {
+  background: url(../img/main/visualPlay.png) no-repeat center bottom;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.count_N {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  left: 21%;
+  padding: 6px 10px;
+  border-radius: 50px 0 0 50px;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+.moreImg {
+  position: absolute;
+  bottom: 5%;
+  left: 24%;
+  padding: 6px 9px;
+  border-radius: 0 50px 50px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 13px;
+  color: #fff;
+}
+.btn_left {
+  width: 30px;
+  height: 30px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 19%;
+  transform: translateY(-50%) rotate(-45deg);
+  text-indent: -9999px;
+}
+.btn_right {
+  width: 30px;
+  height: 30px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  right: 19%;
+  transform: translateY(-50%) rotate(135deg);
+  text-indent: -9999px;
+}
+.btn_left:hover,
+.btn_left:active,
+.btn_right:hover, 
+.btn_right:active {
+  border-top: 3px solid #f47d29;
+  border-left: 3px solid #f47d29;
+}
+.slider_list {
+  overflow: hidden;
+  width: 100%;
+  height: 1067px;
+}
+.slider_list ul {
+  position: relative;
+  z-index: -1;
+}
+.slider_list ul li {
+  width: 1920px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider_list img {
+  width: 1920px;
+  height: 600px;
+}
+/* section01 end*/
+
+/* section02 start */
+.section02 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.title_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section02_title,
+.section03_title,
+.section04_title {
+  font-size: 2rem;
+}
+.section02_title span {color: #f47d29;}
+.section02_more {
+  display: inline-block;
+  width: 9%;
+  font-size: 1.1rem;
+  position: relative;
+}
+.section02_more i {
+  position: absolute;
+  right: 20%;
+  transition: 1s;
+}
+.section02_more:hover i,
+.section02_more:active i {right: 0;}
+.items {padding: 35px 0 150px;}
+.item {
+  display: inline-block;
+  width: 330px;
+  height: 238px;
+  margin-right: 95px;
+  position: relative;
+}
+.item:last-child{margin: 0;}
+.front,
+.back {
+  position: absolute;
+  transition: .5s;
+  top: 0;
+}
+.front {top: 0;}
+.back {top: 80%;}
+.front {
+  width: 100%;
+  z-index: 1;
+}
+.front img {border-radius: 25px;}
+.back {
+  background-color: #fff;
+  opacity: 0;
+  padding: 25px 0 15px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 58%;
+  position: relative;
+}
+.item:hover .front {top: -5%;}
+.item:hover .back {
+  top: 95%;
+  opacity: 1;
+}
+.back h2 {margin-bottom: 15px;}
+.back a {
+  position: absolute;
+  display: inline-block;
+  width: 25%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 10px 10px 15px;
+  border: 1px solid #dfdfdf;
+  border-radius: 15px;
+  transition: .5s;
+}
+.back a i {
+  transition: .5s;
+  margin-left: 5%;
+}
+.back a:hover i,
+.back a:active i{
+  transform: rotate(90deg);
+}
+/* section02 end */
+
+/* section03 start */
+
+/* section03 end */
+
+/* section04 start */
+  .section04 {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .section04 img {width: 100%;}
+  .section04_txt {
+    position: absolute;
+    bottom: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+  }
+  .section04_txt em {
+    font-size: 1.5rem;
+    position: relative;
+    border: 1px solid #000;
+  }
+  .section04_txt .quotes_l {
+    position: absolute;
+    top: -10%;
+    left: -7%;
+    width: 20px;
+  }
+  .section04_txt .quotes_r {
+    position: absolute;
+    top: -10%;
+    right: -7%;
+    width: 18px;
+  }
+  .section04_txt p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 2%;
+  }
+  .watershare_link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 40px;
+    border-radius: 30px;
+    background-color: #073E40;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+/* section04 end */

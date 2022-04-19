@@ -18,5 +18,6 @@ a:visited,
 a:hover,
 a:active,
 a:focus {
+  color: #222;
   text-decoration: none;
 }

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 4%;
+  color: #666;
+}
+.ft_l {
+  float: left;
+  width: 87%;
+}
+.sns_wrap li {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 47px;
+  height: 50px;
+  margin-right: 0.5%;
+  margin-bottom: 1%;
+}
+.youtube {background: url(../img/footer/sns_icon.png) no-repeat 0 center;}
+.facebook {background: url(../img/footer/sns_icon.png) no-repeat;}
+.twitter {background: url(../img/footer/sns_icon.png) no-repeat center;}
+.insta {background: url(../img/footer/sns_icon.png) no-repeat  center;}
+.naver {background: url(../img/footer/sns_icon.png) no-repeat center right;}
+.footer_link li {
+  display: inline-block;
+  padding: 2% 15px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+.footer_link li a {color: #666;}
+.footer_link li:first-child {padding-left: 0;}
+.footer_link li:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #666;
+  position: absolute;
+  top: 42%;
+  right: .3%;
+}
+address {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+.copyright {margin-top: 2%;}
+.ft_r {
+  float: right;
+  width: 13%;
+}
+.footer_logo {
+  background: url(../img/logo.png) no-repeat 0 0;
+  width: 89px;
+  height: 50px;
+  text-indent: -9999px;
+}
+.ft_r div:first-child{
+  background: url(../img/footer/authority_icon_1.png) no-repeat 0 0;
+  width: 87px;
+  height: 27px;
+}
+.ft_r div {
+  width: 140px;
+  height: 27px;
+  text-indent: -9999px;
+  margin-top: 10%;
+  border: 1px solid #dddddd;
+  padding: 2%;
+}
+.tax {background: url(../img/footer/authority_icon_1.png) no-repeat  0 0;}
+.ministry {background: url(../img/footer/authority_icon_2.png) no-repeat 0 0;}
+.right {background: url(../img/footer/authority_icon_3.png) no-repeat 0 0;}

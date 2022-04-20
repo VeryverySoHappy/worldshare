@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 footer {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 4%;
   color: #666;
 }
 .footer_wrap {
-  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
   height: 250px;
 }
 .ft_l {
@@ -55,7 +56,7 @@ address {
   width: 13%;
 }
 .footer_logo {
-  background: url(../img/logo.png) no-repeat 0 0;
+  /* background: url(../img/header/logo.png) no-repeat 0 0; */
   width: 89px;
   height: 50px;
   text-indent: -9999px;
@@ -76,24 +77,36 @@ address {
 .tax {background: url(../img/footer/authority_icon_1.png) no-repeat  0 0;}
 .ministry {background: url(../img/footer/authority_icon_2.png) no-repeat 0 0;}
 .right {background: url(../img/footer/authority_icon_3.png) no-repeat 0 0;}
-@media all and (min-width:768px){
+@media all and (min-width:1024px) and (max-width:1200px){
+  .footer_wrap {
+    width: 95%;
+    margin: 0 auto;
+    height: 250px;
+  }
+  .ft_r {display: none;}
+}
+@media all and (min-width:768px) and (max-width:1024px){
   footer {
     background: #000;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     flex-direction: column-reverse;
   }
 }
 @media all and (max-width:768px) {
   footer {
-    background: red;
     width: 100%;
     flex-direction: row-reverse;
   }
+  .footer_wrap {width: 90%;}
   .ft_l {
     width: 100%;
+    margin: 0 auto;}
+  .ft_l .footer_link {
+    margin: 2%;
+    width: 80%;
   }
-  .ft_r {
-    width: 100%;
-    display: flex;
-  }
+  .footer_link li:nth-child(4) {padding-left: 0;}
+  .ft_l .footer_link a {font-size: 11px;}
+  .ft_r {display: none;}
 }

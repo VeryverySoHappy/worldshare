@@ -8,8 +8,6 @@ form, input, a, img, strong {
 html {
   font-size: 16px;
 }
-/* 데스트탑에서 봣을 땐 이 크기가 기준 */
-
 @media all and (min-width:768px) {
   html {
     font-size: 14px;
@@ -20,32 +18,11 @@ html {
     font-size: 12px;
   }
 }
-
 body, input{
-  /* 보통 body, input 같이 적어줌   */
   font-size: 1rem;
   color:#222;
   font-family: 'Noto Sans KR','본고딕', sans-serif;
 }
-/* 데스크 탑에서 봣을 때 font-size:16를 기준으로해서 얘가 적용 */
-/* 768px로 봣을 땐  font-size:14px을 기준으로해서 적용*/
-/* 320px, 767px 로 봣을 땐, fontsize:12px 을 기준으로해서 적용 */
-
-/* 10px 이하로 떨어지면 안 됌 */
-/* 글자 구분을 할 수 가 없음, 접근성에 안 맞음 */
-
-/* 각각 기준을 잡아주구 작업하면 됌 */
-
-/* 본문은 10px
-본문 소제목 14,15px 
-그 위 제목 16px
-gnb 18px
-정말 커야 20px
-
-네이버, 다음, 구글 폰트 크기 보기
-얘네꺼는 볼 때 불편함이 없죠
-*/
-
 a:link, a:visited {
   text-decoration: none;
   color: #222;
@@ -53,18 +30,12 @@ a:link, a:visited {
 a:hover,
 a:active,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
   color: #222;
 }
-img{
-  border: none;
-}
-header, footer, nav, aside, section {
-  display: block;
-}
-ul {
-  list-style-type: none;
-}
+img{border: none;}
+header, footer, nav, aside, section {display: block;}
+ul {list-style-type: none;}
 #skipMenu {
   position: relative;
   width: 100%;
@@ -90,7 +61,6 @@ ul {
   clear: both;
   display: block;
 }
-
 .skip {
   width: 1px;
   height: 1px;

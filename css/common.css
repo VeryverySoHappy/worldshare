@@ -53,16 +53,8 @@
   color: #767676;
   line-height: 1.5;
 }
-.inner {
-  max-width: 980px;
-  margin: 0 auto;
-  position: relative;
-  box-sizing: border-box;
-}
 #wrapper {
   width: 100%;
   position: relative;
 }
-h1,h2,h3 {
-  font-size: 1rem;
-}
+h1,h2,h3 {font-size: 1rem;}

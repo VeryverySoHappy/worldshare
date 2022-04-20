@@ -1,23 +1,101 @@
 @charset "utf-8";
-
-body, div, header, footer, aside, article, nav, ul, li, ol, form, span, input, img, p, span, em,
-strong, h1, h2, h3, a {margin: 0; padding: 0; }
-header, footer, aside, article, nav, section {display: block;}
-body, input, select {
-  font-size: 12px;
-  color: #222;
-  font-family: 'Nanum','나눔고딕','돋움','dotum',sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body, div, h1, h2, h3, header, footer, article, aside, section, ul, li, dl, dt, dd, nav, p, span,
+form, input, a, img, strong {
+  margin: 0;
+  padding: 0;
 }
-ul, ol {list-style: none;}
-em, address, i {font-style: normal;}
-strong {font-weight: 400;}
-img, fieldset {border: 0 none;}
-img, input, select {vertical-align: middle;}
-a:link,
-a:visited,
+html {
+  font-size: 16px;
+}
+/* 데스트탑에서 봣을 땐 이 크기가 기준 */
+
+@media all and (min-width:768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media all and (min-width:320px) and (max-width:767px){
+  html {
+    font-size: 12px;
+  }
+}
+
+body, input{
+  /* 보통 body, input 같이 적어줌   */
+  font-size: 1rem;
+  color:#222;
+  font-family: 'Noto Sans KR','본고딕', sans-serif;
+}
+/* 데스크 탑에서 봣을 때 font-size:16를 기준으로해서 얘가 적용 */
+/* 768px로 봣을 땐  font-size:14px을 기준으로해서 적용*/
+/* 320px, 767px 로 봣을 땐, fontsize:12px 을 기준으로해서 적용 */
+
+/* 10px 이하로 떨어지면 안 됌 */
+/* 글자 구분을 할 수 가 없음, 접근성에 안 맞음 */
+
+/* 각각 기준을 잡아주구 작업하면 됌 */
+
+/* 본문은 10px
+본문 소제목 14,15px 
+그 위 제목 16px
+gnb 18px
+정말 커야 20px
+
+네이버, 다음, 구글 폰트 크기 보기
+얘네꺼는 볼 때 불편함이 없죠
+*/
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #222;
+}
 a:hover,
 a:active,
 a:focus {
+  text-decoration: underline;
   color: #222;
-  text-decoration: none;
+}
+img{
+  border: none;
+}
+header, footer, nav, aside, section {
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+#skipMenu {
+  position: relative;
+  width: 100%;
+}
+#skipMenu a {
+  position: absolute;
+  top: -100px;
+}
+#skipMenu a:hover,
+#skipMenu a:active,
+#skipMenu a:focus {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: #fff;
+}
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.skip {
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 0;
+  text-indent: -999rem;
 }

@@ -153,10 +153,22 @@ a.section01_more:active {background: rgb(232, 133, 133);}
     letter-spacing: 0.1rem;
   }
   .items {flex-direction: column;}
-  .item {margin: 12%;}
-  .item:first-child {margin-top: 0;}
+  .item {margin: 15%;}
+  .front img,
+  .back {
+    width: 100%;
+    height: 60%;
+  }
+  .item:first-child {margin-top: 2%;}
   .item:hover .back,
-  .item:active .back{top: 85%;}
+  .item:active .back{top: 90%;}
+  .back {
+    box-shadow: rgb(221, 221, 221) 0px 5px 5px 0px ;
+    border-radius: 0 0 30px 30px;
+  }
+  .back a {
+    bottom: 5%;
+  }
 }
 
 /*
